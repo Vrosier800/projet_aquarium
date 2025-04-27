@@ -1,0 +1,48 @@
+.homePage {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrer les éléments verticalement */
+    align-items: center;
+    padding-top: 60px; /* espace pour le titre */
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #003d66, #001a33); /* joli fond comme main */
+    color: white;
+}
+
+.homePage h1 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px #000;
+    position : relative;
+    bottom: 70px;
+}
+
+.button-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    width: 460px;
+}
+
+.button-grid button {
+    background-color: #00bcd4;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 188, 212, 0.4);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 200px;
+    height: 80px;
+    box-sizing: border-box;
+    flex: 0 0 200px;
+}
+
+.button-grid button:hover {
+    background-color: #0097a7;
+    transform: scale(1.05);
+}

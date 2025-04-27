@@ -1,0 +1,45 @@
+# Node.js
+node_modules/
+
+# Symfony / Backend
+*.env
+*.env.*
+/var/
+backend/vendor/
+/backend/migrations/*
+/backend/var/*
+backend/public/bundles/
+/vendor/
+backend/.gitignore
+backend/config/packages/
+
+# Frontend
+frontend/dist/*
+/dist/
+frontend/package.json
+frontend/main.js
+/public/
+
+# IDE / Editor
+.idea/
+/.vscode/
+
+# Logs
+*.log
+
+# Dossiers de cache
+/cache/
+
+# Fichiers de configuration locaux Symfony
+/backend/.env.local
+/backend/.env.*.local
+
+# Build frontend
+/frontend/build/
+/frontend/.cache/
+
+# macOS files
+.DS_Store
+
+# Fichiers temporaires d'éditeurs
+*.swp
