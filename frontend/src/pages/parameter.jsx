@@ -55,6 +55,7 @@ const Parameter = () => {
                         <p><strong>Ca :</strong> {parameter.ca != null ? parameter.ca + "mg/L" : "Pas testé"}</p>
                         <p><strong>Mg :</strong> {parameter.mg != null ? parameter.mg + "mg/L" : "Pas testé"}</p>
                         <p><strong>Note :</strong> {parameter.comment ? parameter.comment : "Pas de commentaire"}</p>
+                        <hr/>
                     </div>
                     ))
             ) : (
