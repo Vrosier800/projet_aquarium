@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from "react";
-import {fetchNotes} from "../api/note";
+import {fetchNotes} from "../../api/note/getNote";
 import {Link} from "react-router-dom";
 
-const Note = () => {
+const GetNote = () => {
     const [notes, setNotes] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(false);
@@ -55,4 +55,4 @@ const Note = () => {
     );
 };
 
-export default Note;
+export default GetNote;

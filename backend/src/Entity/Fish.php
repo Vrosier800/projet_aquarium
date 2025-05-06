@@ -37,7 +37,6 @@ class Fish
     #[ORM\OneToOne(cascade: ['persist', 'remove'])]
     private ?Picture $picture = null;
 
-
     public function __construct()
     {
     }

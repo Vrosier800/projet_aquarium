@@ -17,7 +17,7 @@ class ParameterRepository extends ServiceEntityRepository
     }
 
 //    /**
-//     * @return Parameter[] Returns an array of Parameter objects
+//     * @return GetParameter[] Returns an array of GetParameter objects
 //     */
 //    public function findByExampleField($value): array
 //    {
@@ -31,7 +31,7 @@ class ParameterRepository extends ServiceEntityRepository
 //        ;
 //    }
 
-//    public function findOneBySomeField($value): ?Parameter
+//    public function findOneBySomeField($value): ?GetParameter
 //    {
 //        return $this->createQueryBuilder('p')
 //            ->andWhere('p.exampleField = :val')

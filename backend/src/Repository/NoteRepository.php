@@ -17,7 +17,7 @@ class NoteRepository extends ServiceEntityRepository
     }
 
 //    /**
-//     * @return Note[] Returns an array of Note objects
+//     * @return GetNote[] Returns an array of GetNote objects
 //     */
 //    public function findByExampleField($value): array
 //    {
@@ -31,7 +31,7 @@ class NoteRepository extends ServiceEntityRepository
 //        ;
 //    }
 
-//    public function findOneBySomeField($value): ?Note
+//    public function findOneBySomeField($value): ?GetNote
 //    {
 //        return $this->createQueryBuilder('n')
 //            ->andWhere('n.exampleField = :val')

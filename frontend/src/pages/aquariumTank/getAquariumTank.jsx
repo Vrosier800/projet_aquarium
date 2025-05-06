@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { fetchAquariumTanks } from "../api/aquariumTank";
+import { fetchAquariumTanks } from "../../api/aquariumTank/getAquariumTank";
 import {Link} from "react-router-dom";
 
-const AquariumTank = () => {
+const GetAquariumTank = () => {
     const [tanks, setTanks] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(false);
@@ -38,6 +38,10 @@ const AquariumTank = () => {
                 <Link to="/accueil">
                     <button>Retour à l'accueil</button>
                 </Link>
+
+                <Link to="/ajouterBac">
+                    <button>Ajouter un bac</button>
+                </Link>
             </div>
             <h2>Mes bacs</h2>
             {tanks.length > 0 ? (
@@ -60,4 +64,4 @@ const AquariumTank = () => {
 };
 
 
-export default AquariumTank;
+export default GetAquariumTank;

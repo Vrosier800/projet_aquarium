@@ -1,9 +1,9 @@
-import {fetchParameters} from "../api/parameter";
+import {fetchParameters} from "../../api/parameter/getParameter";
 import {useState, useEffect} from "react";
 import React from "react";
 import {Link} from "react-router-dom";
 
-const Parameter = () => {
+const GetParameter = () => {
     const [parameters, setParameters] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(false);
@@ -65,4 +65,4 @@ const Parameter = () => {
     );
 };
 
-    export default Parameter;
+    export default GetParameter;

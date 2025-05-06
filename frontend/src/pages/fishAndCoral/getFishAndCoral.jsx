@@ -1,10 +1,10 @@
 import React from "react";
 import {useEffect, useState} from "react";
-import {fetchFish} from "../api/fish";
-import {fetchCoral} from "../api/coral";
+import {fetchFish} from "../../api/fish/getFish";
+import {fetchCoral} from "../../api/coral/getCoral";
 import {Link} from "react-router-dom";
 
-const FishAndCoral = () => {
+const GetFishAndCoral = () => {
     const [fishes, setFishes] = useState([]);
     const [corals, setCorals] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -66,6 +66,10 @@ const FishAndCoral = () => {
                 ) : (
                     <p>Aucun poisson trouvé</p>
                 )}
+
+                <Link to="/ajouterPoisson">
+                    <button>Ajouter un poisson</button>
+                </Link>
             </section>
 
             <section className="coralSection">
@@ -85,4 +89,4 @@ const FishAndCoral = () => {
     )
 };
 
-export default FishAndCoral;
+export default GetFishAndCoral;

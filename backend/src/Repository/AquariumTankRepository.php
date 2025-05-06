@@ -17,7 +17,7 @@ class AquariumTankRepository extends ServiceEntityRepository
     }
 
 //    /**
-//     * @return AquariumTank[] Returns an array of AquariumTank objects
+//     * @return GetAquariumTank[] Returns an array of GetAquariumTank objects
 //     */
 //    public function findByExampleField($value): array
 //    {
@@ -31,7 +31,7 @@ class AquariumTankRepository extends ServiceEntityRepository
 //        ;
 //    }
 
-//    public function findOneBySomeField($value): ?AquariumTank
+//    public function findOneBySomeField($value): ?GetAquariumTank
 //    {
 //        return $this->createQueryBuilder('a')
 //            ->andWhere('a.exampleField = :val')
