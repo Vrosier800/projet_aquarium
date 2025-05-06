@@ -38,6 +38,9 @@ const GetNote = () => {
                 <Link to='/accueil'>
                     <button>Retour à l'accueil</button>
                 </Link>
+                <Link to='/ajouterNote'>
+                    <button>Ajouter une note</button>
+                </Link>
             </div>
             <h2>Mes notes</h2>
             {notes.length > 0 ? (
