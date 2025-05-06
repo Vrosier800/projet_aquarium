@@ -1,4 +1,4 @@
-export const fetchAquariumTanks = async () => {
+export const getAquariumTanks = async () => {
     try {
         const response = await fetch('http://127.0.0.1:8000/api/aquarium_tanks', {
             headers: { 'Content-Type': 'application/json' }

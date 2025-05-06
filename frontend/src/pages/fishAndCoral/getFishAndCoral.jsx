@@ -1,7 +1,7 @@
 import React from "react";
 import {useEffect, useState} from "react";
 import {fetchFish} from "../../api/fish/getFish";
-import {fetchCoral} from "../../api/coral/getCoral";
+import {getCoral} from "../../api/coral/getCoral";
 import {Link} from "react-router-dom";
 
 const GetFishAndCoral = () => {
@@ -15,7 +15,7 @@ const GetFishAndCoral = () => {
             try {
                 const [fishData, coralData] = await Promise.all([
                     fetchFish(),
-                    fetchCoral()
+                    getCoral()
                 ]);
 
                 if (Array.isArray(fishData)) {
@@ -83,6 +83,9 @@ const GetFishAndCoral = () => {
                 ) : (
                     <p>Aucun corail trouvé</p>
                 )}
+                <Link to='/ajouterCorail'>
+                    <button>Ajouter un corail</button>
+                </Link>
             </section>
 
         </div>

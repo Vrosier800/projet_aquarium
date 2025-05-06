@@ -8,6 +8,7 @@ import GetNote from "./pages/note/getNote";
 import GetParameter from "./pages/parameter/getParameter"
 import AddAquariumTankForm from "./pages/aquariumTank/postAquariumTank";
 import AddFishForm from "./pages/fishAndCoral/postFish";
+import AddCoral from "./pages/fishAndCoral/postCoral";
 
 const App = () => {
     return (
@@ -21,6 +22,7 @@ const App = () => {
                 <Route path="/parametres" element={<GetParameter/>} />
                 <Route path="/ajouterBac" element={<AddAquariumTankForm/>}/>
                 <Route path="/ajouterPoisson" element={<AddFishForm/>}/>
+                <Route path="/ajouterCorail" element={<AddCoral/>} />
             </Routes>
         </Router>
     );

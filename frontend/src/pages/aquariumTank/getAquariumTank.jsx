@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { fetchAquariumTanks } from "../../api/aquariumTank/getAquariumTank";
+import { getAquariumTanks } from "../../api/aquariumTank/getAquariumTank";
 import {Link} from "react-router-dom";
 
 const GetAquariumTank = () => {
@@ -10,7 +10,7 @@ const GetAquariumTank = () => {
     useEffect(() => {
         const getTanks = async () => {
             try {
-                const data = await fetchAquariumTanks();
+                const data = await getAquariumTanks();
                 if (Array.isArray(data)) {
                     setTanks(data); // On met à jour les bacs
                 } else {
