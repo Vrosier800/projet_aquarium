@@ -39,6 +39,9 @@ const GetParameter = () => {
                 <Link to='/accueil'>
                     <button>Retour à l'accueil</button>
                 </Link>
+                <Link to='/ajouterParametre'>
+                    <button>Ajouter des paramètres</button>
+                </Link>
             </div>
             <h2>Mes paramètres</h2>
             {parameters.length > 0 ? (

@@ -10,6 +10,7 @@ import AddAquariumTankForm from "./pages/aquariumTank/postAquariumTank";
 import AddFishForm from "./pages/fishAndCoral/postFish";
 import AddCoral from "./pages/fishAndCoral/postCoral";
 import AddNoteForm from "./pages/note/postNote";
+import AddParameterForm from "./pages/parameter/postParameter";
 
 const App = () => {
     return (
@@ -25,6 +26,7 @@ const App = () => {
                 <Route path="/ajouterPoisson" element={<AddFishForm/>}/>
                 <Route path="/ajouterCorail" element={<AddCoral/>} />
                 <Route path="/ajouterNote" element={<AddNoteForm/>} />
+                <Route path='/ajouterParametre' element={<AddParameterForm />} />
             </Routes>
         </Router>
     );

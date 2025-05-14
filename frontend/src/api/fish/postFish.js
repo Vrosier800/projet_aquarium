@@ -24,4 +24,4 @@ export const postFish = async (cleanData) => {
     } catch (error) {
         console.error('Erreur :', error);
     }
-}
+};
