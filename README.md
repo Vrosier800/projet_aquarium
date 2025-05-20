@@ -15,9 +15,8 @@ Développé en **Symfony (API)** et **Electron (frontend JS/HTML/CSS)**.
 - **Format API** : JSON-LD via API Platform
 
 ---
-
 ## 🏢 Architecture du projet
-
+```
 /backend
   └── Symfony (API REST)
       ├── src/Entity
@@ -43,8 +42,8 @@ Développé en **Symfony (API)** et **Electron (frontend JS/HTML/CSS)**.
           └── ...
       ├── pages /            # Pages à afficher en React
       └── assets/     
-
-      ---
+```
+---
 
 ## 💻 Développé par 
 Victor Rosier – [Développeur Web Junior]
